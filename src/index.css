@@ -1,13 +1,113 @@
-body {
+* {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(40, 40, 43);
+  margin: 0;
+}
+
+.App {
+  width: 636px;
+  height: 853px;
+  background-color: white;
+  border-radius: 8.95px;
+}
+
+nav {
+  height: 70px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+  padding: 22px 30px 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.hero-text {
+  padding: 36px;
+}
+
+.hero-text h1 {
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+.hero-text p {
+  margin-top: 5px;
+  margin-right: 150px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 110%;
+}
+
+.card {
+  display: flex;
+  margin-top: 10px;
+  margin-right: 17px;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  width: 176px;
+  height: 300px;
+  position: relative;
+}
+
+.card-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 2px;
+  width: 61px;
+  height: 20px;
+  position: absolute;
+  z-index: 1000;
+  font-weight: 400;
+  font-size: 10.24px;
+  text-transform: uppercase;
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+.card-text {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+}
+
+.card-rating {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin-top: 7px;
+}
+
+.rating-details {
+  color: #918E9B;
+}
+
+.card-title {
+  margin: 6px 0;
+}
+
+.card-data {
+  display: flex;
+  margin-left: 36px;
+  margin-right: 36px;
 }
